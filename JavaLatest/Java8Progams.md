@@ -10,6 +10,7 @@
    This code creates a list of strings, filters out the ones that don't start with the letter "A" using a lambda expression, and collects the filtered strings into a new list. Finally, the program prints the filtered list of strings.
     
 1. Write a program to calculate the sum of all even numbers in a list using Java 8 streams.
+    
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     int sum = numbers.stream()
                     .filter(n -> n % 2 == 0)
@@ -18,6 +19,7 @@
     System.out.println(sum);
     
 2. Write a program to sort a list of strings in ascending order using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "Bob");
     List<String> sortedNames = names.stream()
                                     .sorted()
@@ -25,6 +27,7 @@
     System.out.println(sortedNames);
 
 3. Write a program to find the maximum element in a list of integers using Java 8 streams.
+    
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     Optional<Integer> max = numbers.stream()
                                     .max(Integer::compare);
@@ -33,6 +36,7 @@
     }
 
 4. Write a program to remove duplicates from a list of strings using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "John", "Bob");
     List<String> distinctNames = names.stream()
                                         .distinct()
@@ -41,6 +45,7 @@
     
 
 5. Write a program to find the average of a list of doubles using Java 8 streams.
+    
     List<Double> numbers = Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0);
     Optional<Double> average = numbers.stream()
                                     .mapToDouble(Double::doubleValue)
@@ -50,6 +55,7 @@
     }
 
 6. Write a program to convert a list of strings to uppercase using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "Bob");
     List<String> upperCaseNames = names.stream()
                                         .map(String::toUpperCase)
@@ -57,18 +63,21 @@
     System.out.println(upperCaseNames);
 
 7. Write a program to check if a list of strings contains a specific string using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "Bob");
     boolean containsName = names.stream()
                                 .anyMatch("John"::equals);
     System.out.println(containsName);
 
 8. Write a program to concatenate a list of strings using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "Bob");
     String concatenatedNames = names.stream()
                                     .reduce("", String::concat);
     System.out.println(concatenatedNames);
 
 9. Write a program to find the length of the longest string in a list of strings using Java 8 streams.
+    
     List<String> names = Arrays.asList("John", "Jane", "Adam", "Mary", "Bob");
     OptionalInt maxLength = names.stream()
                                     .mapToInt(String::length)
