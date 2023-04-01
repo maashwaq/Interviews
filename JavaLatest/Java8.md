@@ -3,6 +3,29 @@ Java 8 interview questions related to collections:
 ---------------------------------------------------
 **What are the new features in Java 8 related to collections?**
 **Answer: Java 8 introduced several new features related to collections, such as stream API, lambda expressions, and method references. These features allow developers to work with collections in a more concise, efficient, and expressive way.
+
+Java 8 introduced several new features and improvements to the language, including:
+
+Lambda expressions: A concise way to represent an anonymous function that can be passed as a parameter to a method.
+
+Stream API: A new way to process collections of data in a functional way, enabling parallelism and efficient processing of large data sets.
+
+Default methods: Allows adding new methods to interfaces without breaking existing implementations.
+
+Method references: A shorthand notation for referring to an existing method by name, allowing for more concise code.
+
+Optional class: A container object that may or may not contain a value, providing a better alternative to using null values.
+
+Functional interfaces: Interfaces with a single abstract method that can be used as lambda expressions.
+
+Date and Time API: A new date and time API that is more comprehensive and easier to use than the legacy java.util.Date and java.util.Calendar classes.
+
+Nashorn JavaScript engine: A new JavaScript engine for running JavaScript code within the JVM.
+
+Type annotations: Allows adding annotations to any type use, including type casts, instanceof checks, and new expressions.
+
+These features have made Java more expressive, functional, and efficient. The introduction of lambda expressions and the stream API has made functional programming more accessible in Java, allowing developers to write more concise and expressive code. The Optional class has helped in writing more robust and null-safe code, while the new date and time API has made it easier to handle date and time related operations. Overall, Java 8 has made significant improvements to the language and has made it more capable of handling modern application development.
+
 **---------------------------------------------------
 
 **What is a stream in Java 8?**
