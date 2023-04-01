@@ -1,6 +1,34 @@
 0. What is interface
+  
   An interface in Java is a collection of abstract methods and constants that serves as a blueprint for a set of related functionalities that 
   a class can implement.
+  
+  In Java, an interface is a collection of abstract methods and constants. It is a blueprint for a set of related functionalities that a class can implement.
+
+  Interfaces can be used to define a set of methods that a class must implement, without specifying how those methods should be implemented. This allows for polymorphism and loose coupling between objects.
+
+  To declare an interface in Java, you use the interface keyword followed by the name of the interface. For example:
+   public interface MyInterface {
+    public void doSomething();
+    public int getSomeValue();
+   }
+
+  Here, MyInterface is an interface that declares two methods: doSomething() and getSomeValue(). Any class that implements this interface must provide an implementation for these methods.
+
+ Classes can implement multiple interfaces, allowing them to inherit functionality from multiple sources. To implement an interface, a class must use the implements keyword, followed by the name of the interface. For example:
+
+  public class MyClass implements MyInterface {
+    public void doSomething() {
+        // implementation goes here
+    }
+    public int getSomeValue() {
+        // implementation goes here
+    }
+}
+
+Here, MyClass implements the MyInterface interface and provides an implementation for the two methods declared in the interface.
+
+
 
 1. Interface vs abstract class
     Comparison of Interfaces and Abstract Classes in Java:
