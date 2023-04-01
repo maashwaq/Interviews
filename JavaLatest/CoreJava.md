@@ -1,4 +1,19 @@
-1. compare vs compareable in tabular form
+0. What is interface
+  An interface in Java is a collection of abstract methods and constants that serves as a blueprint for a set of related functionalities that 
+  a class can implement.
+
+1. Interface vs abstract class
+    Comparison of Interfaces and Abstract Classes in Java:
+
+   ![image](image_9.png)
+   ![image](image_10.png)
+   
+In summary, interfaces are used to define a set of related functionalities, 
+whereas abstract classes are used to provide a base implementation for a set of related classes. 
+Interfaces support multiple inheritance and have only abstract methods, 
+while abstract classes can have concrete methods and do not support multiple inheritance.
+
+3. compare vs compareable in tabular form
 
 //Here's a tabular comparison of Comparator and Comparable interfaces in Java:
 ![image](image_2.png)
@@ -15,6 +30,9 @@ In Java, a method can be declared with the final keyword to indicate that it can
 
 Here are some differences between final and non-final methods in Java:
 ![image](image_3.png)
+
+Compare vs Compareable in tabular form 
+![image](image_4.png)
 
 When a method is declared as final, it provides a guarantee to other developers that the behavior of the method cannot be changed by any subclass. This is useful in situations where you want to prevent a subclass from modifying the behavior of a method that is critical to the class.
 
@@ -62,5 +80,24 @@ public class WeakHashMapExample {
 }
 
 In the above example, we create a WeakHashMap and add a key-value pair to it. We then set the key variable to null to remove the strong reference to the key, which allows it to be garbage collected. We then call System.gc() to trigger garbage collection, and check whether the key-value pair is still present in the map. Since the key is no longer strongly referenced, it should be evicted from the WeakHashMap and the value should be null.
+
+
+**Convert string to characters**
+
+In Java, you can convert a string to an array of characters using the toCharArray() method. Here's an example:
+
+String str = "Hello World";
+char[] chars = str.toCharArray();
+
+In this example, the toCharArray() method is called on the str string, which returns an array of characters. The resulting character array is stored in the chars variable.
+
+You can then loop through the character array to access each individual character, like this:
+
+for (int i = 0; i < chars.length; i++) {
+    System.out.println(chars[i]);
+}
+
+This will print out each character of the string on a separate line.
+
 
 

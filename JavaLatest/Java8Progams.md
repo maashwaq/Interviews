@@ -1,3 +1,13 @@
+0. Call the strings letter start with A in Java 8 program
+    List<String> stringList = Arrays.asList("Apple", "Banana", "Apricot", "Orange", "Avocado");
+    List<String> filteredList = stringList.stream()
+        .filter(s -> s.startsWith("A"))
+        .collect(Collectors.toList());
+    
+    System.out.println("Strings starting with A: " + filteredList);
+
+This code creates a list of strings, filters out the ones that don't start with the letter "A" using a lambda expression, and collects the filtered strings into a new list. Finally, the program prints the filtered list of strings.
+    
 1. Write a program to calculate the sum of all even numbers in a list using Java 8 streams.
     List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
     int sum = numbers.stream()
