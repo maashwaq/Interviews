@@ -1,4 +1,7 @@
+_____________________________________________________________________________________________________________________________________________________________________
+
 1. Use Java Lambdas for use in Collections
+_____________________________________________________________________________________________________________________________________________________________________
 
 Java Lambdas are a powerful feature introduced in Java 8 that allow for concise and functional programming. They are particularly useful when working with Collections, as they provide a way to easily perform operations on the elements of a collection.
 
