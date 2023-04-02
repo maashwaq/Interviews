@@ -1,4 +1,7 @@
+ _____________________________________________________________________________________________________________________________________________________________________
+
 0. What is interface
+_____________________________________________________________________________________________________________________________________________________________________
   
   An interface in Java is a collection of abstract methods and constants that serves as a blueprint for a set of related functionalities that 
   a class can implement.
@@ -29,9 +32,12 @@
 Here, MyClass implements the MyInterface interface and provides an implementation for the two methods declared in the interface.
 
 
+_____________________________________________________________________________________________________________________________________________________________________
 
 1. Interface vs abstract class
-    Comparison of Interfaces and Abstract Classes in Java:
+_____________________________________________________________________________________________________________________________________________________________________
+
+Comparison of Interfaces and Abstract Classes in Java:
 
    ![image](image_9.png)
    ![image](image_10.png)
@@ -40,8 +46,10 @@ In summary, interfaces are used to define a set of related functionalities,
 whereas abstract classes are used to provide a base implementation for a set of related classes. 
 Interfaces support multiple inheritance and have only abstract methods, 
 while abstract classes can have concrete methods and do not support multiple inheritance.
+_____________________________________________________________________________________________________________________________________________________________________
 
 3. compare vs compareable in tabular form
+_____________________________________________________________________________________________________________________________________________________________________
 
 //Here's a tabular comparison of Comparator and Comparable interfaces in Java:
 ![image](image_2.png)
@@ -51,8 +59,10 @@ The Comparable interface is used to define a natural ordering for a class, such 
 The Comparator interface, on the other hand, is used to define a custom ordering for a class, such as sorting employees by name or sorting products by price. The compare() method is used to compare two objects based on the custom ordering and return a negative number, zero, or a positive number depending on whether the first object is less than, equal to, or greater than the second object.
 
 Both interfaces are used to sort collections or arrays of objects. The Collections.sort() and Arrays.sort() methods use the natural ordering defined by the Comparable interface by default, but can also accept a Comparator object for custom ordering. The Stream.sorted() method can also accept a Comparator object for sorting a stream of objects.
+_____________________________________________________________________________________________________________________________________________________________________
 
 2. final and non final methods in java
+_____________________________________________________________________________________________________________________________________________________________________
 
 In Java, a method can be declared with the final keyword to indicate that it cannot be overridden by any subclasses. On the other hand, a method that is not declared as final can be overridden by subclasses, unless it is declared with the private keyword.
 
@@ -67,8 +77,10 @@ When a method is declared as final, it provides a guarantee to other developers 
 In contrast, non-final methods can be overridden by subclasses, allowing them to customize or extend the behavior of the method. This is useful when you want to allow subclasses to provide their own implementation of a method, while still retaining the base behavior of the original method.
 
 It's worth noting that the private keyword also prevents a method from being overridden, but it can only be accessed within the same class and cannot be accessed by subclasses.
+_____________________________________________________________________________________________________________________________________________________________________
 
 3. Weak hashmap
+_____________________________________________________________________________________________________________________________________________________________________
 
 A WeakHashMap is a type of Map in Java that uses weak references to its keys. Weak references allow the garbage collector to reclaim the memory occupied by an object if it is not strongly referenced by any other objects.
 
@@ -109,8 +121,10 @@ public class WeakHashMapExample {
 
 In the above example, we create a WeakHashMap and add a key-value pair to it. We then set the key variable to null to remove the strong reference to the key, which allows it to be garbage collected. We then call System.gc() to trigger garbage collection, and check whether the key-value pair is still present in the map. Since the key is no longer strongly referenced, it should be evicted from the WeakHashMap and the value should be null.
 
+_____________________________________________________________________________________________________________________________________________________________________
 
 **Convert string to characters**
+_____________________________________________________________________________________________________________________________________________________________________
 
 In Java, you can convert a string to an array of characters using the toCharArray() method. Here's an example:
 
@@ -127,5 +141,6 @@ for (int i = 0; i < chars.length; i++) {
 
 This will print out each character of the string on a separate line.
 
+_____________________________________________________________________________________________________________________________________________________________________
 
 
