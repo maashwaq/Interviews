@@ -1,4 +1,7 @@
+_____________________________________________________________________________________________________________________________________________________________________
+
 1. Write a program to search for a character in a given HashMap and return its corresponding value using Java 8 streams.
+_____________________________________________________________________________________________________________________________________________________________________
 
     HashMap<Character, String> map = new HashMap<>();
     map.put('a', "Apple");
@@ -24,4 +27,3 @@ In the above program, we have created a HashMap containing some characters and t
 
 We have then used the filter() operation to filter out the entry corresponding to the search character. The map() operation is then used to extract the value from the entry. Finally, the findFirst() operation is used to get the first element of the resulting stream, which is the value for the search character. If the search character is not found, the orElse() method returns null.
     
-2. dsd
